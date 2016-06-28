@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+var ${1:Module} = require("${2:path}/${1/(.)/\L\1\E/}");
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>reqModule</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

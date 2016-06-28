@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+new ButtonView({
+    context : {
+        cssClass : "${1}",
+        title : "${2}",
+        text : "${3}",
+        icon : {
+            cssClass : "${4}"
+        }
+    },
+    events : {
+        Clicked : function(event) {
+            ${5}
+        }
+    }
+})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>buttonView</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

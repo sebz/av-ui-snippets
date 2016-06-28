@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+new ${1:XXX}View({
+    context : {
+        cssClass : "${2}"
+    },
+    innerViews : [${3}]
+})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>newview</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>

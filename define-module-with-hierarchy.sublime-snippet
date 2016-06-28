@@ -1,0 +1,32 @@
+<snippet>
+    <content><![CDATA[
+define(function(require) {
+
+    /* Imports */
+    var OO = require("frk/core/oo");
+    var Event = require("frk/core/event/event");
+    var ${1:ParentModule} = require("components/$1");
+
+    function ${2:NewModule}(options) {
+        OO.ctor($1, this, [ options ]);
+    }
+    OO.subclassOf($2, $1);
+
+
+    $2.prototype.start = function() {
+        var self = this;
+        $1.prototype.start.call(this);
+
+        ${3}
+
+        return this;
+    };
+
+    return $2;
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>defsub</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
